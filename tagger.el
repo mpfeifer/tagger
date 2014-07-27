@@ -113,7 +113,7 @@ in a directory under ~/.emacs.d/ where they do not clutter the whole filesystem.
 (defun tagger/start()
   (interactive)
   (dolist (hook tagger/modes)
-    (add-hook 'hook 'tagger-mode)
+    (add-hook hook 'tagger-mode)
     )
   )
   
